@@ -26,4 +26,9 @@ password_toggle_visibility.onclick = function() {
   this.classList.toggle('fa-eye-slash');
 }
 
-$( "div.demo" ).scrollTop( 300 );
+
+
+function submitButtonStyle(_this)
+{
+    _this.style.backgroundColor = "lightgreen";
+}
