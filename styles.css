@@ -433,6 +433,305 @@ input[type=checkbox]:checked+ .cm-slider{
  box-shadow: 0 2px 2px rgba(0,0,0,0.25);
 }
 
+
+
+/*shruthi*/
+.cm-progress_bar{
+    width:12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    position:relative;
+    
+}
+.cm-progress_circle_bar_container{
+    display: flex;
+    flex-direction: row;
+    width: 45px;
+    justify-content: space-around;
+    border: 1px solid white;
+}
+.cm-progress_bar_circle1{
+    background:#f79b08;
+     animation-name: progress_bar_circle1_animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes progress_bar_circle1_animation{
+    0%{
+        background: #f29c11;
+      }
+      40%{
+          background:#eba940;
+      }
+      80%{
+          background:#f7cd88;
+      }
+}
+.cm-progress_bar_circle2{
+    background:#eba940;
+    animation-name: progress_bar_circle2_animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes progress_bar_circle2_animation{
+    0%{
+        background:#eba940 ;
+      }
+      40%{
+          background:#f7cd88;
+      }
+      800%{
+          background:#f29c11;
+      }
+}
+
+.cm-progress_bar_circle3{
+    background:#f7cd88;
+    animation-name: progress_bar_circle3_animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes progress_bar_circle3_animation{
+    0%{
+        background: #f7cd88;
+      }
+      40%{
+          background:#f29c11;
+      }
+      80%{
+          background:#eba940;
+      }
+}
+.cm-progess_wave_width{
+    width:55px;
+    border:none;
+}
+.cm-progress_bar_wave{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    position:relative;
+    background: rgb(103, 150, 238);
+}
+.cm-progess_wave_width > div{
+   /* animation-name: progress_circle_wave;*/
+   animation-name: progress_bar_rectangle;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.cm-prograss_bar_wave1{
+    transform: translateY(0px);
+}
+.cm-prograss_bar_wave2{
+    animation-delay: -0.7s;
+  
+}
+.cm-prograss_bar_wave3{
+    animation-delay: -0.6s;
+    
+}
+.cm-prograss_bar_wave4{
+    animation-delay: -0.5s; 
+}
+.cm-prograss_bar_wave5{
+    animation-delay: -0.4s;
+}
+.cm-prograss_bar_wave6{
+    animation-delay: -0.3s;
+}.cm-prograss_bar_wave7{
+    animation-delay: -0.2s;
+}
+.cm-prograss_bar_wave8{
+    animation-delay: -0.1s;
+}
+@keyframes progress_circle_wave{
+    25%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+   }
+.cm-progress_rectangle_container{
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    justify-content: space-around;
+    border: none;
+}
+.cm-progress_rectangle{
+    width:6px;
+    height:30px;
+    border:none;
+    border-radius:2px;
+    /*border-radius:50%;
+    height:6px;*/
+    background:#4FC3F7;
+
+}
+.cm-progress_rectangle_container > div{
+    animation-name: progress_bar_rectangle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  /*  animation: progress_bar_rectangle 1.2s infinite alternate;*/
+}
+.cm-rectangle2{
+    animation-delay: -0.9s;
+}
+.cm-rectangle3{
+    animation-delay: -0.8s;
+}
+.cm-rectangle4{
+    animation-delay: -0.7s;
+}
+.cm-rectangle5{
+    animation-delay: -0.6s;
+}
+
+
+@keyframes progress_bar_rectangle{
+ 0%{
+    /* transform: translateY(20px);*/
+    transform : scaleY(0.4); 
+
+ }
+ 20%{
+     transform:scaleY(1.0);
+ }
+ 40%, 100%{
+    transform : scaleY(0.6); 
+ }
+}
+.cm-progress_color_wave_width{
+    width:60px;
+    border:none;
+}
+.cm-progress_color_wave_width > div{
+    animation-name: progress_bar_color_circle;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes progress_bar_color_circle{
+    0%{
+       /* transform: translateY(20px);*/
+       transform : scaleY(0.4);
+       background: #058af7; 
+   
+    }
+    20%{
+        transform:scaleY(1.0);
+        background : #309bf2;
+    }
+    40%{
+       transform : scaleY(0.6);
+       background: #59b0f7; 
+    }
+    100%{
+        transform : scaleY(0.6);
+        background: #79bcf2;
+    }
+   }
+
+
+
+ .cm-slider-square{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width:350px;
+     align-items: center;
+ }
+.cm-slider-square input{
+    -webkit-appearance: none;
+    outline:none;
+    background: #f7cd88;
+    height: 5px;
+    border-radius:3px;
+    width:300px;
+}
+ .cm-slider-square input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height:17px;
+    width:17px;
+    background: #f29c11;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0 1px #e0d4f0;
+}
+.cm-slider-square input::-webkit-slider-thumb:hover{
+   /* box-shadow: 0 0 0 5px #e0d4f0;*/
+   background:black
+    
+}
+.cm-slider-square input:active::-webkit-slider-thumb{
+   /* box-shadow: 0 0 0 10px #f0e6ff;*/
+   background:black;
+
+}
+/*C6AEE7
+    background : #6200EE;
+*/
+.cm-slider-rectangle input::-webkit-slider-thumb{
+    height: 30px;
+    width:7px;
+    border-radius:7px;
+    
+}
+
+.cm-slider-container{
+    position:absolute;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+}
+.cm-slider-container input{
+   position:relative;
+   -webkit-appearance:none;
+
+    width:300px;
+    height:5px; 
+    border-radius:5px;
+    background-color:#f7cd88;
+    outline:none;
+}
+.cm-slider-container input::-webkit-slider-thumb{
+       -webkit-appearance: none;
+       height: 18px;
+       width:18px;
+       background-color: #f29c11;
+       border-radius:50%;
+       border:none;
+       cursor: pointer;
+
+}
+.cm-slider-container input:active::-webkit-slider-thumb{
+    background-color:#e3dfe9;
+    border:3px solid #f29c11;
+}
+.cm-slider-value{
+    width:13%;
+    position:relative;
+    background-color:#f29c11;
+    color: white;
+   
+   text-align:center;
+   padding: 3px 3px 3px 3px;
+   border-radius : 5px;
+
+
+}
+
 input[type=checkbox]:checked+ .cm-slider-shadow:before{
   left: 42px;
   
