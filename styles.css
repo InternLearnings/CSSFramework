@@ -1,0 +1,137 @@
+.demo {
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    overflow: auto;
+}
+
+.cm-txt-filled{
+  height: 30px;
+  width: 300px;
+  background-color: lightgray;
+  border: none;
+}
+
+.cm-txt-outline {
+  height: 30px;
+  width: 300px;
+  border-color: gray;
+}
+
+.cm-txt-outline-primary {
+  height: 30px;
+  width: 300px;
+  border-color: blue;
+}
+
+.cm-txt-outline-success {
+  height: 30px;
+  width: 300px;
+  border-color: green;
+}
+
+.cm-txt-outline-warning {
+  height: 30px;
+  width: 300px;
+  border-color: orange;
+}
+
+.cm-txt-outline-danger {
+  height: 30px;
+  width: 300px;
+  border-color: red;
+}
+
+.cm-txt-outline-btm-primary {
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid;
+  border-bottom-color: blue;
+}
+
+.cm-txt-outline-btm-success {
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid;
+  border-bottom-color: green;
+}
+
+.cm-txt-outline-btm-warning {
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid;
+  border-bottom-color: orange;
+}
+
+.cm-txt-outline-btm-danger {
+  height: 30px;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid;
+  border-bottom-color: red;
+}
+
+.cm-ftr {
+  /* margin-top: 200px; */
+  height: 200px;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cm-ftr-p{
+  color: green;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cm-ftr-menu {
+  list-style: none;
+  text-align: center;
+}
+
+.cm-ftr-menu-item{
+  display: inline-block;
+  margin: 10px;
+}
+
+.cm-ftr-menu-item > a{
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.cm-subscribe-letter {
+  border-radius: 15px;
+  width: 20%;
+  height: 15%;
+  border: none;
+  margin: 2px 5px;
+}
+
+.cm-subscribe-button, .cm-ftr-login, .cm-ftr-signup {
+  border-radius: 15px;
+  background-color: red;
+  height: 18%;
+  width: 7%;
+  color: white;
+  font-weight: bold;
+  font-style: 30px;
+  border: none;
+}
+
+.cm-ftr-login{
+  background-color: green;
+}
+
+.cm-ftr-signup {
+  background-color: blue;
+}
